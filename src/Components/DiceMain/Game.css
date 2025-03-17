@@ -1,0 +1,100 @@
+.inner-main{
+  width: 100%;
+}
+
+.score-outter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  gap: 10px;
+}
+
+.score {
+  text-align: left;
+  width: fit-content;
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+
+.select-num {
+  width: 100%;
+}
+
+.select-num h2 {
+  margin-bottom: 30px;
+}
+
+.select-num span {
+  margin: 6px;
+}
+
+.select-num span img {
+  cursor: pointer;
+  width: 7%;
+  aspect-ratio: 4/4;
+  object-fit: contain;
+}
+.dice-num_outer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.dice-num{
+  width: 14%;
+  position: relative;
+  display: flex;
+}
+
+.dice-num img {
+  cursor: pointer;
+  position: absolute;
+}
+
+.dice-num img:nth-child(1){
+  /* width: 100%;
+  padding: 199%; */
+}
+
+.view-btn{
+  position: relative;
+  top: 30%;
+  padding-bottom: 40px;
+}
+
+.start-dice{
+  position: relative;
+  top: 30%;
+  padding: 40px 0 10px;
+}
+
+@media (max-width:700px) {
+  .score{
+    font-size: 14px;
+  }
+  .select-num span img{
+    width: 11%;
+  }
+  .start-dice{
+    top: 20%;
+  }
+}
+
+@media (max-width:500px) {
+  .score{
+    padding: 6px 10px;
+  }
+
+  button{
+    padding: 10px 15px;
+  }
+
+  .select-num span img{
+    width: 21%;
+  }
+  .dice-num{
+    width: 40%;
+  }
+}
