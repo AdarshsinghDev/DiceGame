@@ -61,8 +61,8 @@ function Game() {
     if (score === 0) {
       alert("Your Score is Alredy 0!");
     } else {
-      window.confirm("Are you sure you want to reset your Score ?");
-      if (true) {
+      const userConfirmed = window.confirm("Are you sure you want to reset your Score?");
+      if (userConfirmed) {
         setScore(0);
         setMessage("Score Reseted Succesfully!");
         setSelectedDice(null);
